@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full bg-black border-b shadow-sm sticky top-0 z-50">
+    <nav className="w-full bg-black  shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/dashboard" className="text-2xl font-bold text-white">

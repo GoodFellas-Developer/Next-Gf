@@ -23,7 +23,7 @@ export default function EditContactModal({
     <div className="fixed inset-0 bg-[rgba(0,0,0,0.1)] backdrop-blur-sm flex items-center justify-center z-50 p-4">
       <div className="bg-gray-800 p-6 rounded-2xl shadow-xl w-full max-w-sm sm:max-w-md md:max-w-lg">
         <h2 className="text-xl font-semibold text-white mb-4">Edit Contact</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mb-4">
           <input
             type="text"
             value={contact.fname}
@@ -37,7 +37,7 @@ export default function EditContactModal({
             className="border border-gray-600 rounded-lg p-3 bg-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-400 focus:outline-none w-full"
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mb-4">
           <input
             type="text"
             value={contact.phone}

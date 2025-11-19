@@ -15,7 +15,7 @@ export default function AddContactForm({
 }: Props) {
   return (
     <form onSubmit={handleAddContact} className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
         <input
           type="text"
           placeholder="First Name"
@@ -38,7 +38,7 @@ export default function AddContactForm({
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
         <input
           type="text"
           placeholder="Phone"

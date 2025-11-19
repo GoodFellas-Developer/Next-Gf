@@ -133,14 +133,13 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="bg-gray-900 min-h-screen flex flex-col">
+    <div className="bg-[#131313] min-h-screen flex flex-col">
       <div className="flex-1 py-12 w-full">
         {toast && <Toast message={toast.message} type={toast.type} />}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-extrabold mb-2 text-white">Dashboard</h1>
           <p className="text-gray-300 text-lg mb-8">
-            Welcome back,{" "}
-            <span className="text-blue-400 font-semibold">{user?.email}</span>
+            Welcome back, <span className="text-[#FED402]">{user?.email}</span>
           </p>
 
           {/* Add Contact Button */}
@@ -198,7 +197,10 @@ export default function DashboardPage() {
 
           <ConfirmUpdateModal
             open={showConfirmUpdate}
-            onCancel={() => setShowConfirmUpdate(false)}
+            onCancel={() => {
+              setShowConfirmUpdate(false); // hide confirm
+              setShowEditModal(true); // show edit modal again
+            }}
             onConfirm={handleUpdateContact}
           />
 
